@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <form id="form-main" onsubmit="return validate()" method="POST">
+                <div class="form1">
+                    <h3>Create Account</h3>
+                    <div>
+                        <div class="input"><input type="text" name="username" id="username" placeholder="enter username"></div>
+                        <div class="input"><input type="email" name="email" id="email" placeholder="enter email"></div>
+                        <div class="input"><input type="password" name="password" id="password" placeholder="password">
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="button" class="nxtbtn" id="next1">NEXT</button>
+                    </div>
+                </div>
+                <div class="form2">
+                    <h3>Social Links</h3>
+                    <div>
+                        <div class="input"><input type="text" name="github" id="github" placeholder="Github account">
+                        </div>
+                        <div class="input"><input type="text" name="linkedin" id="linkedin" placeholder="Linkedin account">
+                        </div>
+                        <div class="input"><input type="text" name="medium" id="medium" placeholder="Medium account">
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="button" class="prvbtn" id="previous1">PREVIOUS</button>
+                        <button type="button" class="nxtbtn" id="next2">NEXT</button>
+                    </div>
+                </div>
+                <div class="form3">
+                    <h3>Personal Info</h3>
+                    <div>
+                        <div class="input"><input type="date" name="date" id="date"></div>
+                        <div class="input"><input type="number" name="mobile" id="mobile"
+                                placeholder="Enter mobile number">
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="button" class="prvbtn" id="previous2">PREVIOUS</button>
+                        <button type="submit" class="submit" id="submitbtn">SUBMIT</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
